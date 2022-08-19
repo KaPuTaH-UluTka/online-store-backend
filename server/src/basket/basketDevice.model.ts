@@ -3,6 +3,7 @@ import { ApiProperty } from '@nestjs/swagger';
 import { DataTypes } from 'sequelize';
 import { User } from '../users/users.model';
 import { Basket } from './basket.model';
+import { Device } from '../devices/device.model';
 
 @Table({ tableName: 'basketDevice' })
 export class BasketDevice extends Model<BasketDevice> {
@@ -13,4 +14,8 @@ export class BasketDevice extends Model<BasketDevice> {
   @ForeignKey(() => Basket)
   @Column({ type: DataTypes.INTEGER })
   declare basketId: number;
+
+  @ForeignKey(() => Device)
+  @Column({ type: DataTypes.INTEGER })
+  declare deviceId: number;
 }

@@ -9,6 +9,12 @@ import { RolesModule } from './roles/roles.module';
 import { AuthModule } from './auth/auth.module';
 import { Basket } from './basket/basket.model';
 import { BasketDevice } from './basket/basketDevice.model';
+import { Rating } from './devices/rating.model';
+import { Device } from './devices/device.model';
+import { DeviceInfo } from './devices/deviceInfo.model';
+import { TypeBrand } from './types/type-brand.model';
+import { Brand } from './brands/brand.model';
+import { Type } from './types/type.model';
 
 @Module({
   controllers: [],
@@ -24,7 +30,19 @@ import { BasketDevice } from './basket/basketDevice.model';
       username: process.env.POSTGRES_USER,
       password: process.env.POSTGRES_PASSWORD,
       database: process.env.POSTGRES_DB,
-      models: [User, Role, UserRoles, Basket, BasketDevice],
+      models: [
+        User,
+        Role,
+        UserRoles,
+        Basket,
+        BasketDevice,
+        Rating,
+        Device,
+        DeviceInfo,
+        Brand,
+        Type,
+        TypeBrand,
+      ],
       autoLoadModels: true,
     }),
     UsersModule,
