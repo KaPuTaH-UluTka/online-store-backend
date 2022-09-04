@@ -6,6 +6,7 @@ import { Brand } from '../brands/brand.model';
 import { Type } from '../types/type.model';
 import { BasketDevice } from '../basket/basketDevice.model';
 import { Rating } from './rating.model';
+import { DeviceInfo } from './deviceInfo.model';
 
 interface DeviceCreationAttrs {
   name: string;
@@ -46,4 +47,6 @@ export class Device extends Model<Device, DeviceCreationAttrs> {
   basketDevices: BasketDevice[];
   @HasMany(() => Rating)
   rate: Rating[];
+  @HasMany(() => DeviceInfo)
+  info: DeviceInfo[];
 }

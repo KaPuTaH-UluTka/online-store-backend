@@ -15,6 +15,8 @@ import { DeviceInfo } from './devices/deviceInfo.model';
 import { TypeBrand } from './types/type-brand.model';
 import { Brand } from './brands/brand.model';
 import { Type } from './types/type.model';
+import { ServeStaticModule } from '@nestjs/serve-static';
+import { resolve } from 'path';
 
 @Module({
   controllers: [],
@@ -22,6 +24,9 @@ import { Type } from './types/type.model';
   imports: [
     ConfigModule.forRoot({
       envFilePath: `.${process.env.NODE_ENV}.env`,
+    }),
+    ServeStaticModule.forRoot({
+      rootPath: resolve(__dirname, 'static'),
     }),
     SequelizeModule.forRoot({
       dialect: 'postgres',
