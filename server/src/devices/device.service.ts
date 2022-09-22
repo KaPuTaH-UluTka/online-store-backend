@@ -2,7 +2,6 @@ import { CreateDeviceDto } from './dto/create-device.dto';
 import { InjectModel } from '@nestjs/sequelize';
 import { Device } from './device.model';
 import { FilesService } from '../files/files.service';
-import { Request, Response } from 'express';
 import { HttpException, HttpStatus } from '@nestjs/common';
 
 export class DeviceService {
