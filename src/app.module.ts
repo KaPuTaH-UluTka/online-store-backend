@@ -12,11 +12,13 @@ import { BasketDevice } from './basket/basketDevice.model';
 import { Rating } from './devices/rating.model';
 import { Device } from './devices/device.model';
 import { DeviceInfo } from './devices/deviceInfo.model';
-import { TypeBrand } from './types/type-brand.model';
-import { Brand } from './brands/brand.model';
-import { Type } from './types/type.model';
+import { TypeBrand } from './deviceTypes/type-brand.model';
+import { Brand } from './deviceBrands/brand.model';
+import { Type } from './deviceTypes/types.model';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { resolve } from 'path';
+import {TypesModule} from "./deviceTypes/types.module";
+import {DeviceModule} from "./devices/device.module";
 
 @Module({
   controllers: [],
@@ -50,6 +52,7 @@ import { resolve } from 'path';
       ],
       autoLoadModels: true,
     }),
+    TypesModule,
     UsersModule,
     RolesModule,
     AuthModule,

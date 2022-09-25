@@ -1,9 +1,9 @@
-import { BelongsToMany, Column, HasMany, Model, Table } from 'sequelize-typescript';
+import { BelongsToMany, Column, ForeignKey, HasMany, Model, Table } from 'sequelize-typescript';
 import { ApiProperty } from '@nestjs/swagger';
 import { DataTypes } from 'sequelize';
 import { Device } from '../devices/device.model';
-import { Type } from '../types/type.model';
-import { TypeBrand } from '../types/type-brand.model';
+import { Type } from '../deviceTypes/types.model';
+import { TypeBrand } from '../deviceTypes/type-brand.model';
 
 @Table({ tableName: 'brands' })
 export class Brand extends Model<Brand> {
@@ -13,6 +13,9 @@ export class Brand extends Model<Brand> {
   @ApiProperty({ example: 'Name', description: 'Brand name' })
   @Column({ type: DataTypes.STRING, unique: true, allowNull: false })
   declare name: string;
+  @ForeignKey(() => Type)
+  @Column({ type: DataTypes.INTEGER })
+  declare typeId: number;
 
   @HasMany(() => Device)
   devices: Device[];

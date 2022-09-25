@@ -13,8 +13,8 @@ export class UsersService {
     private roleService: RolesService
   ) {}
 
-  async createUser(dto: CreateUserDto) {
-    const user = await this.userRepository.create(dto);
+  async createUser(userDto: CreateUserDto) {
+    const user = await this.userRepository.create(userDto);
     const role = await this.roleService.getRoleByValue('USER');
     await user.$set('roles', [role.id]);
     user.roles = [role];
@@ -31,12 +31,12 @@ export class UsersService {
     return user;
   }
 
-  async addRole(dto: AddRoleDto) {
-    const user = await this.userRepository.findByPk(dto.userId);
-    const role = await this.roleService.getRoleByValue(dto.value);
+  async addRole(userDto: AddRoleDto) {
+    const user = await this.userRepository.findByPk(userDto.userId);
+    const role = await this.roleService.getRoleByValue(userDto.value);
     if (role && user) {
       await user.$add('role', role.id);
-      return dto;
+      return userDto;
     }
     throw new HttpException('User or role not found', HttpStatus.NOT_FOUND);
   }

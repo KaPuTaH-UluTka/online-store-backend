@@ -1,9 +1,9 @@
 import { Column, ForeignKey, Model, Table } from 'sequelize-typescript';
 import { DataTypes } from 'sequelize';
-import { Brand } from '../brands/brand.model';
-import { Type } from './type.model';
+import { Brand } from '../deviceBrands/brand.model';
+import { Type } from './types.model';
 
-@Table({ tableName: 'type-brand' })
+@Table({ tableName: 'deviceTypes-brand' })
 export class TypeBrand extends Model<TypeBrand> {
   @Column({ type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true })
   declare id: number;

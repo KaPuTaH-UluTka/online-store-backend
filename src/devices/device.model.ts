@@ -1,9 +1,8 @@
 import { BelongsTo, Column, ForeignKey, HasMany, Model, Table } from 'sequelize-typescript';
 import { ApiProperty } from '@nestjs/swagger';
 import { DataTypes } from 'sequelize';
-import { User } from '../users/users.model';
-import { Brand } from '../brands/brand.model';
-import { Type } from '../types/type.model';
+import { Brand } from '../deviceBrands/brand.model';
+import { Type } from '../deviceTypes/types.model';
 import { BasketDevice } from '../basket/basketDevice.model';
 import { Rating } from './rating.model';
 import { DeviceInfo } from './deviceInfo.model';
@@ -13,6 +12,8 @@ interface DeviceCreationAttrs {
   price: number;
   rating: number;
   img: string;
+  typeId: number;
+  brandId: number;
 }
 
 @Table({ tableName: 'devices' })
