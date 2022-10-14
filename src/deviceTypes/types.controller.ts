@@ -1,6 +1,7 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Post, Req } from '@nestjs/common';
 import { TypesService } from './types.service';
 import { CreateTypeDto } from './dto/create-type.dto';
+import { Request } from 'express';
 
 @Controller('types')
 export class TypesController {
@@ -14,5 +15,11 @@ export class TypesController {
   @Get()
   getAll() {
     return this.typesService.getTypes();
+  }
+
+  @Delete('/:id')
+  deleteOne(@Req() request: Request) {
+    const { id } = request.params;
+    return this.typesService.deleteOne(id);
   }
 }

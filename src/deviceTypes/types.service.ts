@@ -8,12 +8,16 @@ export class TypesService {
   constructor(@InjectModel(Type) private typeRepository: typeof Type) {}
 
   async createType(typeDto: CreateTypeDto) {
-    const type = await this.typeRepository.create(typeDto);
-    return type;
+    try {
+      const type = await this.typeRepository.create(typeDto);
+      return type;
+    } catch (err) {
+      throw new HttpException('Type already exist', HttpStatus.BAD_REQUEST);
+    }
   }
 
   async getTypes() {
-    const types = await this.typeRepository.findAll({ include: { all: true } });
+    const types = await this.typeRepository.findAll();
     return types;
   }
 
@@ -21,6 +25,8 @@ export class TypesService {
     await this.typeRepository.destroy({ where: { id } }).then(function (deletedRecord) {
       if (deletedRecord !== 1) {
         throw new HttpException('Type not found', HttpStatus.NOT_FOUND);
+      } else {
+        return new HttpException('Deleted successfully', HttpStatus.OK);
       }
     });
   }
