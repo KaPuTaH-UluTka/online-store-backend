@@ -19,6 +19,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { resolve } from 'path';
 import {TypesModule} from "./deviceTypes/types.module";
 import {DeviceModule} from "./devices/device.module";
+import {BrandsModule} from "./deviceBrands/brand.module";
 
 @Module({
   controllers: [],
@@ -53,6 +54,7 @@ import {DeviceModule} from "./devices/device.module";
       autoLoadModels: true,
     }),
     TypesModule,
+    BrandsModule,
     UsersModule,
     RolesModule,
     AuthModule,

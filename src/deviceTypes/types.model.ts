@@ -18,7 +18,7 @@ export class Type extends Model<Type, TypeCreationAttrs> {
   @Column({ type: DataTypes.STRING, unique: true })
   declare name: string;
 
-  @HasMany(() => Brand)
+  @HasMany(() => Device)
   devices: Device[];
   @BelongsToMany(() => Brand, () => TypeBrand)
   brands: Brand[];

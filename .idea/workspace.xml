@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cafe30ac-dbb8-4137-a711-b528cc629749" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/deviceBrands/dto/create-brand.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deviceTypes/types.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceTypes/types.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deviceTypes/types.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceTypes/types.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deviceBrands/brand.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceBrands/brand.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deviceBrands/brand.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceBrands/brand.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deviceBrands/brand.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceBrands/brand.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deviceBrands/brand.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceBrands/brand.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deviceTypes/types.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceTypes/types.model.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +75,10 @@
       <workItem from="1663863393829" duration="702000" />
       <workItem from="1664120394259" duration="8579000" />
       <workItem from="1664474634319" duration="22000" />
-      <workItem from="1665758225003" duration="3775000" />
+      <workItem from="1665758225003" duration="3896000" />
+      <workItem from="1665845136211" duration="71000" />
+      <workItem from="1665851528147" duration="12000" />
+      <workItem from="1665859479839" duration="3493000" />
     </task>
     <servers />
   </component>
