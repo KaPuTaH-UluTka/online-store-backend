@@ -1,9 +1,7 @@
 import { BelongsTo, Column, ForeignKey, Model, Table } from 'sequelize-typescript';
 import { ApiProperty } from '@nestjs/swagger';
 import { DataTypes } from 'sequelize';
-import { Role } from '../roles/roles.model';
 import { Device } from './device.model';
-import { User } from '../users/users.model';
 
 @Table({ tableName: 'device-info' })
 export class DeviceInfo extends Model<DeviceInfo> {
@@ -21,5 +19,5 @@ export class DeviceInfo extends Model<DeviceInfo> {
   declare deviceId: number;
 
   @BelongsTo(() => Device)
-  info: DeviceInfo[];
+  device: Device;
 }

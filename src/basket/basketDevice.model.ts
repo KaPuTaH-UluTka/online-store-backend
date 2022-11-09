@@ -5,7 +5,7 @@ import { User } from '../users/users.model';
 import { Basket } from './basket.model';
 import { Device } from '../devices/device.model';
 
-@Table({ tableName: 'basketDevice' })
+@Table({ tableName: 'basket-device' })
 export class BasketDevice extends Model<BasketDevice> {
   @ApiProperty({ example: '1', description: 'uniq id' })
   @Column({ type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true })

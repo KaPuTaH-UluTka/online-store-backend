@@ -1,15 +1,22 @@
-import { BelongsTo, Column, ForeignKey, HasMany, Model, Table } from 'sequelize-typescript';
-import { DataTypes } from 'sequelize';
+import {
+  BelongsTo,
+  Column,
+  DataType,
+  ForeignKey,
+  HasMany,
+  Model,
+  Table,
+} from 'sequelize-typescript';
 import { BasketDevice } from './basketDevice.model';
 import { User } from '../users/users.model';
 
 @Table({ tableName: 'basket' })
 export class Basket extends Model<Basket> {
-  @Column({ type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true })
+  @Column({ type: DataType.INTEGER, primaryKey: true, autoIncrement: true })
   declare id: number;
 
   @ForeignKey(() => User)
-  @Column({ type: DataTypes.INTEGER })
+  @Column({ type: DataType.INTEGER })
   declare userId: number;
 
   @BelongsTo(() => User)

@@ -17,12 +17,13 @@ import { Brand } from './deviceBrands/brand.model';
 import { Type } from './deviceTypes/types.model';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { resolve } from 'path';
-import {TypesModule} from "./deviceTypes/types.module";
-import {DeviceModule} from "./devices/device.module";
-import {BrandsModule} from "./deviceBrands/brand.module";
+import { TypesModule } from './deviceTypes/types.module';
+import { DeviceModule } from './devices/device.module';
+import { BrandsModule } from './deviceBrands/brand.module';
+import {AppController} from "./app.controller";
 
 @Module({
-  controllers: [],
+  controllers: [AppController],
   providers: [],
   imports: [
     ConfigModule.forRoot({
@@ -55,6 +56,7 @@ import {BrandsModule} from "./deviceBrands/brand.module";
     }),
     TypesModule,
     BrandsModule,
+    DeviceModule,
     UsersModule,
     RolesModule,
     AuthModule,

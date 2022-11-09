@@ -1,6 +1,5 @@
-import { BelongsToMany, Column, HasMany, Model, Table } from 'sequelize-typescript';
+import {BelongsToMany, Column, DataType, HasMany, Model, Table} from 'sequelize-typescript';
 import { ApiProperty } from '@nestjs/swagger';
-import { DataTypes } from 'sequelize';
 import { Device } from '../devices/device.model';
 import { TypeBrand } from './type-brand.model';
 import { Brand } from '../deviceBrands/brand.model';
@@ -12,10 +11,10 @@ interface TypeCreationAttrs {
 @Table({ tableName: 'types' })
 export class Type extends Model<Type, TypeCreationAttrs> {
   @ApiProperty({ example: '1', description: 'Uniq id' })
-  @Column({ type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true })
+  @Column({ type: DataType.INTEGER, primaryKey: true, autoIncrement: true })
   declare id: number;
   @ApiProperty({ example: 'Name', description: 'Type name' })
-  @Column({ type: DataTypes.STRING, unique: true })
+  @Column({ type: DataType.STRING, unique: true })
   declare name: string;
 
   @HasMany(() => Device)

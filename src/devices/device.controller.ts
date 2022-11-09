@@ -1,9 +1,20 @@
 import { DeviceService } from './device.service';
-import { Body, Delete, Get, Post, Req, UploadedFile, UseInterceptors } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Delete,
+  Get,
+  Patch,
+  Post,
+  Req,
+  UploadedFile,
+  UseInterceptors,
+} from '@nestjs/common';
 import { CreateDeviceDto } from './dto/create-device.dto';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { Request } from 'express';
 
+@Controller('devices')
 export class DeviceController {
   constructor(private deviceService: DeviceService) {}
 
@@ -18,10 +29,20 @@ export class DeviceController {
     return this.deviceService.getAll();
   }
 
-  @Get()
-  getOne(@Body() deviceDto: CreateDeviceDto) {}
+  @Get('/:id')
+  getOne(@Req() req: Request) {
+    const { id } = req.params;
+    return this.deviceService.getOne(id);
+  }
 
-  @Delete()
+  @Patch('/:id')
+  @UseInterceptors(FileInterceptor('img'))
+  updateDevice(@Body() deviceDto: CreateDeviceDto, @UploadedFile() img, @Req() req: Request) {
+    const { id } = req.params;
+    return this.deviceService.update(deviceDto, img, id);
+  }
+
+  @Delete('/:id')
   deleteOne(@Req() req: Request) {
     const { id } = req.params;
     return this.deviceService.deleteOne(id);

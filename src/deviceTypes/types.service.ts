@@ -26,7 +26,7 @@ export class TypesService {
       if (deletedRecord !== 1) {
         throw new HttpException('Type not found', HttpStatus.NOT_FOUND);
       } else {
-        return new HttpException('Deleted successfully', HttpStatus.OK);
+        throw new HttpException('Deleted successfully', HttpStatus.OK);
       }
     });
   }

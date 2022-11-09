@@ -5,14 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cafe30ac-dbb8-4137-a711-b528cc629749" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/deviceBrands/dto/create-brand.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deviceBrands/brand.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceBrands/brand.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basket/basket.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/basket/basket.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basket/basketDevice.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/basket/basketDevice.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/deviceBrands/brand.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceBrands/brand.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deviceBrands/brand.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceBrands/brand.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deviceBrands/brand.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceBrands/brand.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/deviceTypes/types.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceTypes/types.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deviceTypes/types.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceTypes/types.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/device.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/device.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/device.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/device.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/device.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/device.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/device.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/device.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/deviceInfo.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/deviceInfo.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/devices/dto/create-device.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/dto/create-device.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/files.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/files.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/roles/roles.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/roles/roles.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/users.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/users.model.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -78,7 +88,12 @@
       <workItem from="1665758225003" duration="3896000" />
       <workItem from="1665845136211" duration="71000" />
       <workItem from="1665851528147" duration="12000" />
-      <workItem from="1665859479839" duration="3493000" />
+      <workItem from="1665859479839" duration="3526000" />
+      <workItem from="1666538641833" duration="4471000" />
+      <workItem from="1667569775796" duration="4387000" />
+      <workItem from="1667745414568" duration="3826000" />
+      <workItem from="1667917381208" duration="2891000" />
+      <workItem from="1668005378062" duration="5126000" />
     </task>
     <servers />
   </component>

@@ -1,10 +1,9 @@
-import { DeviceInfo } from '../deviceInfo.model';
-
 export class CreateDeviceDto {
   readonly name: string;
-  readonly price: string;
+  readonly price: number;
   readonly img: string;
-  readonly brandId: string;
-  readonly typeId: string;
-  readonly info: DeviceInfo[];
+  readonly rating: number;
+  readonly brandId: number;
+  readonly typeId: number;
+  readonly info: string;
 }
