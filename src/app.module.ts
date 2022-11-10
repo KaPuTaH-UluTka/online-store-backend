@@ -21,6 +21,7 @@ import { TypesModule } from './deviceTypes/types.module';
 import { DeviceModule } from './devices/device.module';
 import { BrandsModule } from './deviceBrands/brand.module';
 import {AppController} from "./app.controller";
+import {BasketModule} from "./basket/basket.module";
 
 @Module({
   controllers: [AppController],
@@ -60,6 +61,7 @@ import {AppController} from "./app.controller";
     UsersModule,
     RolesModule,
     AuthModule,
+    BasketModule,
   ],
 })
 export class AppModule {}

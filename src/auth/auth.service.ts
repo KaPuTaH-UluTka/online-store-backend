@@ -4,10 +4,15 @@ import { UsersService } from '../users/user.service';
 import { JwtService } from '@nestjs/jwt';
 import { User } from '../users/users.model';
 import * as bcrypt from 'bcryptjs';
+import { BasketService } from '../basket/basket.service';
 
 @Injectable()
 export class AuthService {
-  constructor(private userService: UsersService, private jwtService: JwtService) {}
+  constructor(
+    private userService: UsersService,
+    private jwtService: JwtService,
+    private basketService: BasketService
+  ) {}
 
   async login(userDto: CreateUserDto) {
     const user = await this.validateUser(userDto);
@@ -21,6 +26,7 @@ export class AuthService {
     }
     const hashPassword = await bcrypt.hash(userDto.password, 5);
     const user = await this.userService.createUser({ ...userDto, password: hashPassword });
+    await this.basketService.createBasket(user.id);
     return this.generateToken(user);
   }
 

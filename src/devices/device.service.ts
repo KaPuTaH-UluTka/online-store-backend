@@ -2,8 +2,9 @@ import { CreateDeviceDto } from './dto/create-device.dto';
 import { InjectModel } from '@nestjs/sequelize';
 import { Device } from './device.model';
 import { FilesService } from '../files/files.service';
-import { HttpException, HttpStatus } from '@nestjs/common';
+import { HttpException, HttpStatus, Injectable } from '@nestjs/common';
 
+@Injectable({})
 export class DeviceService {
   constructor(
     @InjectModel(Device) private deviceRepository: typeof Device,

@@ -5,23 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cafe30ac-dbb8-4137-a711-b528cc629749" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/app.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basket/basket.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basket/basket.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basket/basket.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basket/basket.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/basket/basket.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/basket/basketDevice.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/basket/basketDevice.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deviceBrands/brand.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceBrands/brand.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deviceTypes/types.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceTypes/types.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/deviceTypes/types.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/deviceTypes/types.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/device.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/device.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/device.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/device.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/device.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/device.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/devices/device.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/device.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/deviceInfo.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/deviceInfo.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/dto/create-device.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/dto/create-device.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/files.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/files.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roles/roles.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/roles/roles.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/users.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/users.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/users/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +31,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="2F8AZEgWfseko5hlEnH84TPsipS" />
   <component name="ProjectViewState">
@@ -93,7 +95,8 @@
       <workItem from="1667569775796" duration="4387000" />
       <workItem from="1667745414568" duration="3826000" />
       <workItem from="1667917381208" duration="2891000" />
-      <workItem from="1668005378062" duration="5126000" />
+      <workItem from="1668005378062" duration="5187000" />
+      <workItem from="1668087149486" duration="5520000" />
     </task>
     <servers />
   </component>

@@ -13,7 +13,6 @@ export class AuthController {
   @ApiResponse({ status: 200, type: User })
   @Post('/login')
   login(@Body() userDto: CreateUserDto) {
-    console.log(userDto);
     return this.authService.login(userDto);
   }
   @ApiOperation({ summary: 'Registration' })
