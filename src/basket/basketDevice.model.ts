@@ -10,6 +10,9 @@ export class BasketDevice extends Model<BasketDevice> {
   @Column({ type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true })
   declare id: number;
 
+  @Column({ type: DataTypes.INTEGER, allowNull: true })
+  declare number: number;
+
   @ForeignKey(() => Basket)
   @Column({ type: DataTypes.INTEGER })
   declare basketId: number;

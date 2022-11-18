@@ -4,7 +4,7 @@ import { BasketDevice } from './basketDevice.model';
 import { Device } from '../devices/device.model';
 import { BasketService } from './basket.service';
 import { BasketController } from './basket.controller';
-import {Basket} from "./basket.model";
+import { Basket } from './basket.model';
 
 @Module({
   providers: [BasketService],

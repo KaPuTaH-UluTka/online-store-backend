@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cafe30ac-dbb8-4137-a711-b528cc629749" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/basket/basket.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basket/basket.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/basket/basket.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/basket/dto/basket-device.dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/order/order.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/order/order.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/order/order.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/order/order.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basket/basket.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/basket/basket.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basket/basket.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/basket/basket.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basket/basket.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/basket/basket.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/basket/basketDevice.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/basket/basketDevice.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/devices/device.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/devices/device.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/users/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/users/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="tsconfig.json" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -96,7 +96,12 @@
       <workItem from="1667745414568" duration="3826000" />
       <workItem from="1667917381208" duration="2891000" />
       <workItem from="1668005378062" duration="5187000" />
-      <workItem from="1668087149486" duration="5520000" />
+      <workItem from="1668087149486" duration="6196000" />
+      <workItem from="1668437095562" duration="2279000" />
+      <workItem from="1668469724953" duration="17000" />
+      <workItem from="1668550421253" duration="2000" />
+      <workItem from="1668693487855" duration="4882000" />
+      <workItem from="1668782813585" duration="1543000" />
     </task>
     <servers />
   </component>
