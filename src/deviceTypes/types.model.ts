@@ -1,4 +1,4 @@
-import {BelongsToMany, Column, DataType, HasMany, Model, Table} from 'sequelize-typescript';
+import { BelongsToMany, Column, DataType, HasMany, Model, Table } from 'sequelize-typescript';
 import { ApiProperty } from '@nestjs/swagger';
 import { Device } from '../devices/device.model';
 import { TypeBrand } from './type-brand.model';

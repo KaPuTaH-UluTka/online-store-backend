@@ -2,7 +2,9 @@ import { Body, Controller, Delete, Get, Post, Req } from '@nestjs/common';
 import { TypesService } from './types.service';
 import { CreateTypeDto } from './dto/create-type.dto';
 import { Request } from 'express';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Types')
 @Controller('types')
 export class TypesController {
   constructor(private typesService: TypesService) {}

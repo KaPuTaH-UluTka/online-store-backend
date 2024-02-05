@@ -2,7 +2,9 @@ import { Body, Controller, Delete, Get, Post, Req } from '@nestjs/common';
 import { Request } from 'express';
 import { BasketService } from './basket.service';
 import { CreateBasketDeviceDto } from './dto/basket-device.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Basket')
 @Controller('basket')
 export class BasketController {
   constructor(private basketService: BasketService) {}

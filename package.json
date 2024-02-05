@@ -5,6 +5,9 @@
   "scripts": {
     "start:prod": "cross-env NODE_ENV=production nest start",
     "start:dev": "cross-env NODE_ENV=development nest start --watch",
+    "lint:scripts": "npx eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "yarn lint:scripts",
+    "lint:fix": "yarn lint:scripts --fix",
     "build": "nest build"
   },
   "keywords": [],

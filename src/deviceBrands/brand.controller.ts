@@ -2,7 +2,9 @@ import { Body, Controller, Delete, Get, Post, Req } from '@nestjs/common';
 import { Request } from 'express';
 import { BrandService } from './brand.service';
 import { CreateBrandDto } from './dto/create-brand.dto';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Brands')
 @Controller('brands')
 export class BrandsController {
   constructor(private brandService: BrandService) {}

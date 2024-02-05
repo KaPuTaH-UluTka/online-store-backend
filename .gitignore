@@ -2,3 +2,5 @@
 /src/static/*.jpg
 /build
 /dist
+.development.env
+.production.env

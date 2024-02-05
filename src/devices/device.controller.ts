@@ -13,7 +13,9 @@ import {
 import { CreateDeviceDto } from './dto/create-device.dto';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { Request } from 'express';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Devices')
 @Controller('devices')
 export class DeviceController {
   constructor(private deviceService: DeviceService) {}

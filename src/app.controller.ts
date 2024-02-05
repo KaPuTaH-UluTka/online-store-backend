@@ -5,9 +5,9 @@ import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 @Controller()
 export class AppController {
   @ApiOperation({ summary: 'Hello user' })
-  @ApiResponse({ status: 200, description: 'Welcome to online-store' })
+  @ApiResponse({ status: 200, description: 'online-store' })
   @Get()
   getHello(): string {
-    return 'Welcome to online-store';
+    return 'online-store';
   }
 }
