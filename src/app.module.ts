@@ -20,8 +20,8 @@ import { resolve } from 'path';
 import { TypesModule } from './deviceTypes/types.module';
 import { DeviceModule } from './devices/device.module';
 import { BrandsModule } from './deviceBrands/brand.module';
-import {AppController} from "./app.controller";
-import {BasketModule} from "./basket/basket.module";
+import { AppController } from './app.controller';
+import { BasketModule } from './basket/basket.module';
 
 @Module({
   controllers: [AppController],
