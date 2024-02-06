@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post, UseGuards } from '@nestjs/common';
+import { Body, Controller, Get, Param, Patch, Post, UseGuards } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UsersService } from './user.service';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
@@ -26,6 +26,22 @@ export class UsersController {
   @Get()
   getAll() {
     return this.usersService.getAllUsers();
+  }
+  @ApiOperation({ summary: 'User' })
+  @ApiResponse({ status: 200, type: User })
+  @UseGuards(RolesGuard)
+  @Get('/:id')
+  getOne(@Param('id') id: string) {
+    return this.usersService.getUserById(id);
+  }
+
+  @ApiOperation({ summary: 'Update user' })
+  @ApiResponse({ status: 200 })
+  @Roles('ADMIN')
+  @UseGuards(RolesGuard)
+  @Patch('/:id')
+  updateUser(@Param('id') id: string, @Body() userDto: CreateUserDto) {
+    return this.usersService.updateUserById(id, userDto);
   }
 
   @ApiOperation({ summary: 'Set role' })
